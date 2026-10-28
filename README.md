@@ -1,162 +1,118 @@
+# 🤖 OpenClaw AI Customer Service
 
-# 📱 OpenClaw Phone Store AI
-
-> Trợ lý AI chăm sóc khách hàng cho cửa hàng điện thoại — website demo, API sản phẩm/đơn hàng và Skill dành cho OpenClaw.
-
-<p align="left">
-  <a href="https://github.com/openclaw/openclaw"><img alt="OpenClaw" src="https://img.shields.io/badge/Powered%20by-OpenClaw-176B4D?style=for-the-badge"></a>
-  <img alt="Node" src="https://img.shields.io/badge/Node.js-20%2B-43853D?style=for-the-badge&logo=node.js&logoColor=white">
-  <img alt="Status" src="https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge">
+<p align="center">
+  <img src="https://img.shields.io/badge/OpenClaw-AI%20Agent-blueviolet?style=for-the-badge" alt="OpenClaw AI Agent">
+  <img src="https://img.shields.io/badge/HTML-CSS-JavaScript-orange?style=for-the-badge" alt="Web technologies">
+  <img src="https://img.shields.io/badge/Status-Prototype-blue?style=for-the-badge" alt="Prototype">
 </p>
 
-## 🔗 Liên kết
+<p align="center">
+  <b>Website demo chăm sóc khách hàng tự động, định hướng tích hợp OpenClaw AI Agent.</b>
+</p>
 
-- [OpenClaw gốc](https://github.com/openclaw/openclaw)
-- [Tài liệu OpenClaw](https://docs.openclaw.ai/)
-- [Hướng dẫn tạo Skills](https://docs.openclaw.ai/tools/creating-skills)
-- **Website demo chạy tại:** `http://localhost:3000` sau khi khởi động theo hướng dẫn bên dưới.
+<p align="center">
+  <!-- Sau khi bật GitHub Pages, thay URL bên dưới bằng địa chỉ website thật -->
+  <a href="https://TEN-TAI-KHOAN.github.io/TEN-REPOSITORY/">
+    <img src="https://img.shields.io/badge/🚀_LIVE_DEMO-Trải_nghiệm_ngay-2ea44f?style=for-the-badge" alt="Live Demo">
+  </a>
+</p>
 
-> Đây là dự án mở rộng/ứng dụng mẫu dựa trên nền tảng OpenClaw, không phải mã nguồn chính thức của OpenClaw. Website và API trong repo này là prototype; tích hợp mô hình AI trực tiếp vào website, thanh toán, vận chuyển và dữ liệu cửa hàng thật cần được cấu hình thêm.
+## 🌐 Live Demo
 
-## ✨ Chức năng
+**[👉 Bấm vào đây để trải nghiệm website chăm sóc khách hàng](https://TEN-TAI-KHOAN.github.io/TEN-REPOSITORY/)**
 
-- **Website responsive:** danh mục điện thoại, tìm kiếm, lọc theo hãng, giá và thông tin sản phẩm.
-- **Chat tư vấn demo:** gợi ý theo ngân sách và tra cứu trong danh mục mẫu.
-- **API sản phẩm:** danh sách, tìm kiếm, chi tiết sản phẩm.
-- **API đơn hàng demo:** tiếp nhận đơn và cập nhật tồn kho mẫu.
-- **API quản trị cơ bản:** cập nhật giá/tồn kho và trạng thái đơn với `ADMIN_TOKEN`.
-- **OpenClaw Skill:** hướng dẫn Agent tư vấn sản phẩm, không tự bịa giá hoặc chính sách.
-- **Định hướng đa kênh:** có thể cấu hình Telegram qua channel tích hợp sẵn của OpenClaw.
+> Trước khi dùng link này, hãy thay `TEN-TAI-KHOAN` và `TEN-REPOSITORY` bằng thông tin GitHub thật, sau đó bật GitHub Pages. README không thể dùng đường dẫn `file:///D:/...` để mở file trên máy tính người khác.
 
-## 🧱 Kiến trúc
+## 📌 Giới thiệu
+
+ClawCare là prototype website HTML/CSS/JavaScript minh họa giao diện chăm sóc khách hàng tự động. Người dùng có thể gửi câu hỏi về sản phẩm, giao hàng, đổi trả và yêu cầu liên hệ nhân viên. Phiên bản hiện tại trả lời bằng bộ quy tắc mẫu ở phía trình duyệt.
+
+Mục tiêu học tập là phát triển từ giao diện website thành một quy trình tự động hóa có thể kết nối backend, OpenClaw Gateway và Skills.
+
+## ✨ Tính năng demo
+
+- 💬 Giao diện chat responsive.
+- 🧭 Chủ đề gợi ý: sản phẩm, giao hàng, đổi trả và nhân viên.
+- 💡 Trả lời mẫu theo từ khóa.
+- 🔄 Làm mới hội thoại.
+- 📱 Giao diện tương thích màn hình nhỏ.
+- 🛡️ Skill mẫu nhấn mạnh việc không bịa chính sách và bảo vệ thông tin khách hàng.
+
+## 🏗️ Kiến trúc định hướng
 
 ```text
-Website / Telegram
-       │
-       ├── Website demo ──> Express API ──> Catalog JSON / Demo orders
-       │
-       └── Telegram ──────> OpenClaw Gateway ──> Agent + phone-store-support Skill
-                                                    │
-                                                    └── Approved catalog / tools
+Khách hàng
+    ↓
+Website HTML / CSS / JavaScript
+    ↓
+Backend API (cần triển khai)
+    ↓
+OpenClaw Gateway (cần cấu hình)
+    ↓
+AI Agent + Customer Support Skill
+    ↓
+Phản hồi khách hàng
 ```
 
-Website chat trong bản prototype hiện dùng quy tắc đơn giản, chưa gọi trực tiếp LLM hoặc OpenClaw Gateway. Điều này giúp demo chạy ngay cả khi chưa cấu hình API key. Skill cung cấp hành vi cho OpenClaw khi được cài vào workspace; để Agent truy cập giá/tồn kho thật, cần kết nối nguồn dữ liệu hoặc công cụ được cấp quyền.
-
-## 🗂️ Cấu trúc thư mục
+## 📁 Cấu trúc dự án
 
 ```text
-openclaw-phone-store-ai/
+openclaw-ai-customer-service/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── app.js
 ├── data/
-│   └── products.json
+│   └── faq.json
 ├── openclaw/
 │   └── skills/
-│       └── phone-store-support/
+│       └── customer-support/
 │           └── SKILL.md
-├── public/
-│   ├── index.html
-│   ├── styles.css
-│   └── app.js
-├── .env.example
-├── .gitignore
-├── package.json
-├── server.js
 └── README.md
 ```
 
-## 🚀 Chạy website demo
+## 🚀 Chạy demo trên máy tính
 
-Yêu cầu: Node.js 20 trở lên. Bản demo dùng Node.js built-in modules, không cần cài thư viện ngoài.
+1. Tải hoặc clone repository.
+2. Mở `index.html` bằng Chrome, Edge hoặc Firefox.
+3. Thử các chủ đề trong khung chat.
 
-**Windows:** nhấp đúp `start-demo.bat`.
+Không cần cài đặt package cho demo giao diện này. Google Fonts cần kết nối Internet để tải đúng phông chữ; website vẫn có phông dự phòng nếu không tải được.
 
-**macOS / Linux / Terminal:**
+## 🌍 Xuất bản với GitHub Pages
 
-```bash
-node server.js
-```
+1. Đưa toàn bộ file lên repository GitHub.
+2. Mở **Settings → Pages**.
+3. Trong **Build and deployment**, chọn **Deploy from a branch**.
+4. Chọn nhánh `main` và thư mục `/ (root)`, sau đó nhấn **Save**.
+5. Đợi GitHub tạo URL Pages, mở thử URL đó.
+6. Thay hai URL mẫu `https://TEN-TAI-KHOAN.github.io/TEN-REPOSITORY/` ở đầu README bằng URL thực tế.
 
-Mở `http://localhost:3000`. Nếu bạn đã clone repo của mình, vào thư mục dự án rồi chạy lệnh trên. Nếu muốn dùng npm, `npm start` cũng được.
+Tài liệu chính thức: [GitHub Pages](https://docs.github.com/en/pages).
 
-Kiểm tra API:
+## 🔌 Tích hợp OpenClaw trong giai đoạn tiếp theo
 
-```bash
-curl http://localhost:3000/api/health
-curl http://localhost:3000/api/products
-```
+- Xây dựng backend API nhận tin nhắn.
+- Cấu hình backend giao tiếp với OpenClaw Gateway theo tài liệu phiên bản đang dùng.
+- Cài đặt và kiểm tra `openclaw/skills/customer-support/SKILL.md` theo quy trình Skills của OpenClaw.
+- Thêm nguồn FAQ/chính sách đã được xác minh.
+- Bổ sung xác thực, phân quyền, ghi log tối thiểu và chuyển tiếp cho nhân viên.
 
-## 🧪 API chính
+Tham khảo: [OpenClaw trên GitHub](https://github.com/tdta0905/openclaw).
 
-| Method | Endpoint | Mô tả |
-|---|---|---|
-| `GET` | `/api/health` | Kiểm tra máy chủ |
-| `GET` | `/api/products` | Danh mục; hỗ trợ `q`, `brand`, `maxPrice` |
-| `GET` | `/api/products/:id` | Chi tiết sản phẩm |
-| `POST` | `/api/chat` | Trả lời tư vấn demo |
-| `POST` | `/api/orders` | Tạo đơn hàng demo |
-| `GET` | `/api/admin/orders` | Danh sách đơn, cần admin token |
-| `PATCH` | `/api/admin/orders/:id` | Đổi trạng thái đơn, cần admin token |
-| `PUT` | `/api/admin/products/:id` | Cập nhật tên, giá và tồn kho, cần admin token |
+## 🔐 Bảo mật
 
-Ví dụ tạo đơn demo:
+- Không đưa API key, token hoặc thông tin đăng nhập vào HTML/JavaScript công khai.
+- Không để trình duyệt gọi trực tiếp endpoint nội bộ có quyền cao.
+- Chỉ cho Agent sử dụng công cụ đúng phạm vi quyền.
+- Không tự động thực hiện giao dịch nhạy cảm khi chưa có xác nhận và cơ chế kiểm soát.
 
-```json
-{
-  "customerName": "Nguyen Van A",
-  "phone": "0900000000",
-  "address": "Dia chi nhan hang",
-  "items": [{ "id": "IP13-128", "quantity": 1 }],
-  "note": "Gọi trước khi giao"
-}
-```
+## ⚠️ Trạng thái hiện tại
 
-**Không dùng dữ liệu khách hàng thật trong bản demo.** API đơn hàng chưa có xác thực khách hàng, chống spam, giao dịch thanh toán hoặc bảo vệ dữ liệu theo yêu cầu production.
+Đây là **prototype giao diện**. Chatbot dùng câu trả lời mẫu chạy trong trình duyệt, chưa kết nối OpenClaw Gateway, chưa tra cứu đơn hàng thật và chưa tích hợp Telegram. Không dùng demo này để xử lý dữ liệu khách hàng thật.
 
-## 🦞 Cài Skill vào OpenClaw
+## 👨‍💻 Tác giả
+tdta0905
+Thành Đạt — dự án học tập về HTML, JavaScript và ứng dụng AI Agent trong tự động hóa chăm sóc khách hàng.
 
-1. Cài đặt và cấu hình OpenClaw theo [tài liệu chính thức](https://docs.openclaw.ai/).
-2. Sao chép thư mục `openclaw/skills/phone-store-support` trong dự án này vào thư mục workspace skills của OpenClaw, thường là:
-
-   ```text
-   ~/.openclaw/workspace/skills/phone-store-support/
-   ```
-
-3. Kiểm tra Skill:
-
-   ```bash
-   openclaw skills list
-   ```
-
-4. Bắt đầu phiên chat mới hoặc khởi động lại Gateway nếu cần, rồi thử hỏi Agent về cách tư vấn khách hàng.
-
-### Kết nối Telegram
-
-Cấu hình Telegram theo [hướng dẫn channel chính thức](https://docs.openclaw.ai/). Không commit bot token vào GitHub. Với khách hàng bên ngoài, hãy bật cơ chế pairing/allowlist hoặc kiểm soát truy cập tương đương, rồi thử nghiệm bằng tài khoản được cho phép trước khi mở rộng.
-
-Skill chỉ hướng dẫn cách hành xử. Muốn Agent tra cứu sản phẩm và xử lý đơn thật, hãy cung cấp một công cụ/API được xác thực, giới hạn quyền và kiểm tra dữ liệu đầu vào/đầu ra.
-
-## 🛡️ Bảo mật và giới hạn
-
-- Dữ liệu sản phẩm hiện là dữ liệu minh họa, không phải giá thị trường hoặc tồn kho thực.
-- Đặt `ADMIN_TOKEN` bằng biến môi trường mạnh trước khi dùng API quản trị; không để token trong frontend hoặc repo công khai.
-- Không mở cổng server/Gateway ra Internet nếu chưa cấu hình xác thực, phân quyền, giới hạn tốc độ và HTTPS phù hợp.
-- Tin nhắn khách hàng là dữ liệu không đáng tin; không cho AI tự ý hoàn tiền, hủy đơn hoặc thay đổi thông tin nhạy cảm.
-- Bản mẫu lưu đơn trong file JSON, không phù hợp nhiều người dùng đồng thời hay triển khai quy mô lớn.
-- Không thu thập thông tin thanh toán nhạy cảm hoặc dữ liệu cá nhân không cần thiết.
-
-## 🗺️ Roadmap
-
-- [x] Giao diện website responsive
-- [x] Danh mục và lọc sản phẩm
-- [x] Chat tư vấn demo
-- [x] API đơn hàng mẫu và API quản trị cơ bản
-- [x] OpenClaw Skill cho chăm sóc khách hàng
-- [ ] Kết nối website chat với OpenClaw Gateway bằng cơ chế được hỗ trợ
-- [ ] Cơ sở dữ liệu PostgreSQL và phân quyền nhân viên
-- [ ] Dashboard quản trị hoàn chỉnh
-- [ ] Kết nối nguồn giá/tồn kho thật
-- [ ] Tích hợp quy trình giao hàng, thanh toán và bảo hành có xác nhận
-- [ ] Kiểm thử bảo mật, tải và quyền riêng tư trước triển khai
-
-## 📄 Giấy phép
-
-Dự án mẫu này được cung cấp để học tập và phát triển. OpenClaw là dự án riêng; xem giấy phép và thông báo bản quyền của [kho OpenClaw chính thức](https://github.com/openclaw/openclaw) trước khi phân phối các thành phần của nó.
