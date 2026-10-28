@@ -8,7 +8,7 @@
 
 - **GitHub Repository:** [OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG](https://github.com/tdta0905/OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG)
 - **README:** [Xem README trên GitHub](https://github.com/tdta0905/OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG/blob/main/README.md)
-- **Demo website:** [Mở Live Demo](https://tdta0905.github.io/OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG/index.html/style.css)
+- **Demo website:** [Mở Live Demo](https://tdta0905.github.io/OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG/)
 
 > Lưu ý: Link GitHub Pages chỉ hoạt động sau khi bật và triển khai GitHub Pages cho repository.
 
