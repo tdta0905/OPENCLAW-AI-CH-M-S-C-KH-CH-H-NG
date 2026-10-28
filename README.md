@@ -1,118 +1,100 @@
 # 🤖 OpenClaw AI Customer Service
 
-<p align="center">
-  <img src="https://img.shields.io/badge/OpenClaw-AI%20Agent-blueviolet?style=for-the-badge" alt="OpenClaw AI Agent">
-  <img src="https://img.shields.io/badge/HTML-CSS-JavaScript-orange?style=for-the-badge" alt="Web technologies">
-  <img src="https://img.shields.io/badge/Status-Prototype-blue?style=for-the-badge" alt="Prototype">
-</p>
-
-<p align="center">
-  <b>Website demo chăm sóc khách hàng tự động, định hướng tích hợp OpenClaw AI Agent.</b>
-</p>
-
-<p align="center">
-  <!-- Sau khi bật GitHub Pages, thay URL bên dưới bằng địa chỉ website thật -->
-  <a href="https://TEN-TAI-KHOAN.github.io/TEN-REPOSITORY/">
-    <img src="https://img.shields.io/badge/🚀_LIVE_DEMO-Trải_nghiệm_ngay-2ea44f?style=for-the-badge" alt="Live Demo">
-  </a>
-</p>
+![GitHub repo](https://img.shields.io/badge/GitHub-tdta0905-blue?logo=github)
+![Status](https://img.shields.io/badge/Status-Prototype-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 🌐 Live Demo
 
-**[👉 Bấm vào đây để trải nghiệm website chăm sóc khách hàng](https://TEN-TAI-KHOAN.github.io/TEN-REPOSITORY/)**
+- **GitHub Repository:** [OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG](https://github.com/tdta0905/OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG)
+- **README:** [Xem README trên GitHub](https://github.com/tdta0905/OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG/blob/main/README.md)
+- **Demo website:** [Mở Live Demo](https://tdta0905.github.io/OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG/)
 
-> Trước khi dùng link này, hãy thay `TEN-TAI-KHOAN` và `TEN-REPOSITORY` bằng thông tin GitHub thật, sau đó bật GitHub Pages. README không thể dùng đường dẫn `file:///D:/...` để mở file trên máy tính người khác.
+> Lưu ý: Link GitHub Pages chỉ hoạt động sau khi bật và triển khai GitHub Pages cho repository.
 
 ## 📌 Giới thiệu
 
-ClawCare là prototype website HTML/CSS/JavaScript minh họa giao diện chăm sóc khách hàng tự động. Người dùng có thể gửi câu hỏi về sản phẩm, giao hàng, đổi trả và yêu cầu liên hệ nhân viên. Phiên bản hiện tại trả lời bằng bộ quy tắc mẫu ở phía trình duyệt.
+Dự án thử nghiệm giao diện tư vấn khách hàng bằng AI, hướng đến việc hỗ trợ trả lời câu hỏi thường gặp và tạo nền tảng cho việc tích hợp OpenClaw AI Agent.
 
-Mục tiêu học tập là phát triển từ giao diện website thành một quy trình tự động hóa có thể kết nối backend, OpenClaw Gateway và Skills.
+## ✨ Tính năng bản mẫu
 
-## ✨ Tính năng demo
+- Giao diện chat tư vấn khách hàng.
+- Trả lời một số câu hỏi theo các quy tắc có sẵn ở phía giao diện.
+- Có thể mở rộng để tư vấn sản phẩm và kiểm tra tồn kho.
+- Thiết kế làm nền tảng cho việc tích hợp OpenClaw trong các phiên bản tiếp theo.
 
-- 💬 Giao diện chat responsive.
-- 🧭 Chủ đề gợi ý: sản phẩm, giao hàng, đổi trả và nhân viên.
-- 💡 Trả lời mẫu theo từ khóa.
-- 🔄 Làm mới hội thoại.
-- 📱 Giao diện tương thích màn hình nhỏ.
-- 🛡️ Skill mẫu nhấn mạnh việc không bịa chính sách và bảo vệ thông tin khách hàng.
-
-## 🏗️ Kiến trúc định hướng
+## 🏗️ Kiến trúc dự kiến
 
 ```text
 Khách hàng
-    ↓
-Website HTML / CSS / JavaScript
-    ↓
-Backend API (cần triển khai)
-    ↓
-OpenClaw Gateway (cần cấu hình)
-    ↓
-AI Agent + Customer Support Skill
-    ↓
-Phản hồi khách hàng
+    |
+    v
+Giao diện chat (HTML/CSS/JavaScript)
+    |
+    v
+Backend / API (dự kiến)
+    |
+    v
+OpenClaw AI Agent (dự kiến)
+    |
+    +---- Tư vấn sản phẩm
+    |
+    +---- Kiểm tra tồn kho
+    |
+    +---- Hỗ trợ chăm sóc khách hàng
 ```
 
-## 📁 Cấu trúc dự án
+## 📁 Cấu trúc dự án tham khảo
 
 ```text
-openclaw-ai-customer-service/
+OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG/
 ├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── app.js
-├── data/
-│   └── faq.json
-├── openclaw/
-│   └── skills/
-│       └── customer-support/
-│           └── SKILL.md
-└── README.md
+├── README.md
+├── style.css
+└── script.js
 ```
 
-## 🚀 Chạy demo trên máy tính
+> Đây là cấu trúc tham khảo. Hãy điều chỉnh cho khớp với các tệp thực tế trong repository.
 
-1. Tải hoặc clone repository.
-2. Mở `index.html` bằng Chrome, Edge hoặc Firefox.
-3. Thử các chủ đề trong khung chat.
+## 🚀 Chạy dự án trên máy tính
 
-Không cần cài đặt package cho demo giao diện này. Google Fonts cần kết nối Internet để tải đúng phông chữ; website vẫn có phông dự phòng nếu không tải được.
+1. Tải hoặc clone repository:
 
-## 🌍 Xuất bản với GitHub Pages
+   ```bash
+   git clone https://github.com/tdta0905/OPENCLAW-AI-CH-M-S-C-KH-CH-H-NG.git
+   ```
 
-1. Đưa toàn bộ file lên repository GitHub.
-2. Mở **Settings → Pages**.
+2. Mở thư mục dự án.
+3. Nếu có tệp `index.html`, mở tệp đó bằng trình duyệt hoặc dùng tiện ích Live Server trong VS Code.
+
+## 🌍 Triển khai GitHub Pages
+
+1. Mở repository trên GitHub.
+2. Chọn **Settings → Pages**.
 3. Trong **Build and deployment**, chọn **Deploy from a branch**.
-4. Chọn nhánh `main` và thư mục `/ (root)`, sau đó nhấn **Save**.
-5. Đợi GitHub tạo URL Pages, mở thử URL đó.
-6. Thay hai URL mẫu `https://TEN-TAI-KHOAN.github.io/TEN-REPOSITORY/` ở đầu README bằng URL thực tế.
+4. Chọn nhánh `main` và thư mục `/(root)`, sau đó nhấn **Save**.
+5. Đợi GitHub triển khai. Đảm bảo `index.html` nằm ở vị trí được chọn.
 
-Tài liệu chính thức: [GitHub Pages](https://docs.github.com/en/pages).
+## 🔌 Hướng phát triển tiếp theo
 
-## 🔌 Tích hợp OpenClaw trong giai đoạn tiếp theo
-
-- Xây dựng backend API nhận tin nhắn.
-- Cấu hình backend giao tiếp với OpenClaw Gateway theo tài liệu phiên bản đang dùng.
-- Cài đặt và kiểm tra `openclaw/skills/customer-support/SKILL.md` theo quy trình Skills của OpenClaw.
-- Thêm nguồn FAQ/chính sách đã được xác minh.
-- Bổ sung xác thực, phân quyền, ghi log tối thiểu và chuyển tiếp cho nhân viên.
-
-Tham khảo: [OpenClaw trên GitHub](https://github.com/tdta0905/openclaw).
+- Tích hợp OpenClaw Gateway qua backend/API phù hợp.
+- Kết nối nguồn dữ liệu sản phẩm và tồn kho.
+- Bổ sung cơ chế xác thực và phân quyền.
+- Ghi nhận lịch sử hội thoại và xử lý lỗi.
+- Chỉ cung cấp dữ liệu tồn kho sau khi backend xác minh từ nguồn dữ liệu đáng tin cậy.
 
 ## 🔐 Bảo mật
 
-- Không đưa API key, token hoặc thông tin đăng nhập vào HTML/JavaScript công khai.
-- Không để trình duyệt gọi trực tiếp endpoint nội bộ có quyền cao.
-- Chỉ cho Agent sử dụng công cụ đúng phạm vi quyền.
-- Không tự động thực hiện giao dịch nhạy cảm khi chưa có xác nhận và cơ chế kiểm soát.
+- Không đưa API key, token hoặc mật khẩu vào mã frontend hay repository công khai.
+- Lưu thông tin bí mật trong biến môi trường phía backend.
+- Kiểm tra và giới hạn quyền truy cập trước khi kết nối hệ thống thật.
 
-## ⚠️ Trạng thái hiện tại
+## 📌 Trạng thái dự án
 
-Đây là **prototype giao diện**. Chatbot dùng câu trả lời mẫu chạy trong trình duyệt, chưa kết nối OpenClaw Gateway, chưa tra cứu đơn hàng thật và chưa tích hợp Telegram. Không dùng demo này để xử lý dữ liệu khách hàng thật.
+Đây là bản mẫu/đồ án đang phát triển. Chưa nên xem đây là hệ thống chăm sóc khách hàng đã kết nối OpenClaw hoặc dữ liệu tồn kho thực tế, trừ khi các tích hợp đó đã được triển khai và kiểm thử.
 
 ## 👨‍💻 Tác giả
-tdta0905
-Thành Đạt — dự án học tập về HTML, JavaScript và ứng dụng AI Agent trong tự động hóa chăm sóc khách hàng.
 
+**tdta0905** — Dự án học tập về HTML, JavaScript và ứng dụng OpenClaw AI Agent trong tự động hóa chăm sóc khách hàng.
+
+GitHub: [@tdta0905](https://github.com/tdta0905)
