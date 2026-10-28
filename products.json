@@ -1,0 +1,66 @@
+[
+  {
+    "id": "IP15-128",
+    "brand": "Apple",
+    "name": "iPhone 15",
+    "storage": "128GB",
+    "color": "Đen",
+    "price": 13990000,
+    "stock": 5,
+    "warrantyMonths": 12,
+    "description": "Màn hình OLED, camera kép, USB-C.",
+    "tags": [
+      "iphone",
+      "camera",
+      "ios"
+    ]
+  },
+  {
+    "id": "IP13-128",
+    "brand": "Apple",
+    "name": "iPhone 13",
+    "storage": "128GB",
+    "color": "Xanh",
+    "price": 8990000,
+    "stock": 3,
+    "warrantyMonths": 6,
+    "description": "Hiệu năng ổn định, phù hợp nhu cầu hằng ngày.",
+    "tags": [
+      "iphone",
+      "ios",
+      "budget"
+    ]
+  },
+  {
+    "id": "SS-A55-256",
+    "brand": "Samsung",
+    "name": "Galaxy A55 5G",
+    "storage": "256GB",
+    "color": "Xanh navy",
+    "price": 8490000,
+    "stock": 7,
+    "warrantyMonths": 12,
+    "description": "Màn hình AMOLED, camera đa dụng, pin lớn.",
+    "tags": [
+      "samsung",
+      "android",
+      "battery"
+    ]
+  },
+  {
+    "id": "XM-REDMI-NOTE13",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 13",
+    "storage": "256GB",
+    "color": "Xanh",
+    "price": 4990000,
+    "stock": 8,
+    "warrantyMonths": 12,
+    "description": "Màn hình AMOLED, phù hợp ngân sách tiết kiệm.",
+    "tags": [
+      "xiaomi",
+      "android",
+      "budget"
+    ]
+  }
+]
