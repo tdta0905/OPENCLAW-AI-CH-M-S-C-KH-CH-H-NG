@@ -1,0 +1,22 @@
+[
+  {
+    "topic": "Sản phẩm",
+    "sample_question": "Tôi muốn tìm hiểu về sản phẩm",
+    "note": "Câu trả lời demo; thay bằng dữ liệu sản phẩm thực tế khi triển khai."
+  },
+  {
+    "topic": "Đổi trả",
+    "sample_question": "Chính sách đổi trả như thế nào?",
+    "note": "Cần bổ sung chính sách chính thức của cửa hàng."
+  },
+  {
+    "topic": "Giao hàng",
+    "sample_question": "Tôi muốn hỏi về giao hàng",
+    "note": "Chưa kết nối hãng vận chuyển hoặc đơn hàng."
+  },
+  {
+    "topic": "Nhân viên",
+    "sample_question": "Tôi muốn gặp nhân viên hỗ trợ",
+    "note": "Chưa có hệ thống ticket/chuyển tiếp thật."
+  }
+]
