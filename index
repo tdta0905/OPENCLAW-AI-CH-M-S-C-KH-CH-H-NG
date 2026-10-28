@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo website chăm sóc khách hàng tự động theo định hướng tích hợp OpenClaw AI Agent.">
+  <title>ClawCare — AI Customer Support</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ClawCare trang chủ"><span class="brand-mark">✦</span> ClawCare</a>
+    <nav><a href="#features">Tính năng</a><a href="#how-it-works">Cách hoạt động</a></nav>
+    <span class="status"><span class="status-dot"></span> Demo trực tuyến</span>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">OPENCLAW · AI CUSTOMER SERVICE</p>
+        <h1>Chăm sóc khách hàng,<br><span>nhanh hơn mỗi ngày.</span></h1>
+        <p class="hero-desc">Trải nghiệm giao diện hỗ trợ khách hàng thông minh — tra cứu thông tin, xem câu hỏi thường gặp và nhận tư vấn sản phẩm trong một cuộc trò chuyện.</p>
+        <a class="primary-link" href="#support">Bắt đầu trò chuyện <span>↘</span></a>
+        <div class="trust-row"><span>✓ Hỗ trợ 24/7 (demo)</span><span>✓ Dễ mở rộng</span><span>✓ Tối ưu cho web</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="floating-card card-top"><span class="mini-icon">✦</span><div><b>AI Assistant</b><small>Đang sẵn sàng hỗ trợ</small></div><span class="online-dot"></span></div>
+        <div class="chat-preview"><div class="preview-head"><span class="avatar">C</span><div><b>ClawCare Assistant</b><small>Trợ lý hỗ trợ khách hàng</small></div></div><div class="preview-bubble">Xin chào! Mình có thể giúp gì cho bạn hôm nay?</div><div class="preview-lines"><i></i><i></i></div></div>
+        <div class="floating-card card-bottom"><span class="pulse">↗</span><div><b>Phản hồi nhanh</b><small>Trải nghiệm thân thiện</small></div></div>
+      </div>
+    </section>
+
+    <section class="support-section" id="support">
+      <div class="section-intro"><p class="eyebrow">CUSTOMER SUPPORT</p><h2>Chúng tôi có thể giúp gì?</h2><p>Chọn chủ đề hoặc gửi câu hỏi của bạn vào khung chat.</p></div>
+      <div class="support-layout">
+        <aside class="topic-panel">
+          <h3>Chủ đề phổ biến</h3>
+          <button class="topic" data-prompt="Tôi muốn tìm hiểu về sản phẩm"> <span>▦</span><span><b>Sản phẩm</b><small>Tìm hiểu thông tin</small></span><span class="chevron">›</span></button>
+          <button class="topic" data-prompt="Chính sách đổi trả như thế nào?"><span>↺</span><span><b>Đổi trả</b><small>Chính sách hỗ trợ</small></span><span class="chevron">›</span></button>
+          <button class="topic" data-prompt="Tôi muốn hỏi về giao hàng"><span>⌁</span><span><b>Giao hàng</b><small>Thông tin vận chuyển</small></span><span class="chevron">›</span></button>
+          <button class="topic" data-prompt="Tôi muốn gặp nhân viên hỗ trợ"><span>♧</span><span><b>Gặp nhân viên</b><small>Hỗ trợ trực tiếp</small></span><span class="chevron">›</span></button>
+          <div class="privacy-note"><span>♢</span><p><b>Quyền riêng tư</b><br><small>Demo không yêu cầu thông tin thanh toán hoặc mật khẩu.</small></p></div>
+        </aside>
+        <section class="chat-panel" aria-label="Khung trò chuyện">
+          <div class="chat-header"><div class="avatar">C</div><div><b>ClawCare Assistant</b><small><span class="status-dot"></span> Đang hoạt động trong bản demo</small></div><button id="reset-chat" class="icon-button" title="Làm mới hội thoại" aria-label="Làm mới hội thoại">↻</button></div>
+          <div id="messages" class="messages" aria-live="polite">
+            <div class="message assistant"><div class="message-avatar">✦</div><div><div class="bubble">Xin chào! 👋 Mình là trợ lý ClawCare. Bạn cần hỗ trợ về sản phẩm, giao hàng hay chính sách đổi trả?</div><time>Vừa xong</time></div></div>
+          </div>
+          <div class="suggestions"><button data-prompt="Bạn có thể giúp tôi những gì?">Bạn có thể giúp gì?</button><button data-prompt="Chính sách đổi trả như thế nào?">Chính sách đổi trả</button><button data-prompt="Làm sao để liên hệ nhân viên?">Liên hệ nhân viên</button></div>
+          <form id="chat-form" class="composer"><input id="chat-input" type="text" placeholder="Nhập câu hỏi của bạn..." autocomplete="off" aria-label="Tin nhắn" maxlength="500" required><button type="submit" aria-label="Gửi tin nhắn">➤</button></form>
+          <p class="demo-disclaimer">Bản demo dùng câu trả lời mẫu, chưa kết nối OpenClaw Gateway.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="features" id="features"><div class="section-intro"><p class="eyebrow">ĐƯỢC THIẾT KẾ ĐỂ MỞ RỘNG</p><h2>Một điểm chạm, nhiều hỗ trợ</h2></div><div class="feature-grid">
+      <article class="feature-card"><span class="feature-icon purple">✦</span><h3>Trò chuyện tự nhiên</h3><p>Giao diện chat trực quan giúp khách hàng gửi yêu cầu nhanh chóng.</p></article>
+      <article class="feature-card"><span class="feature-icon mint">⌕</span><h3>FAQ thông minh</h3><p>Minh họa cách phân loại các câu hỏi thường gặp và hướng dẫn khách hàng.</p></article>
+      <article class="feature-card"><span class="feature-icon peach">⤴</span><h3>Sẵn sàng tích hợp</h3><p>Có thể phát triển thêm backend và kết nối OpenClaw Skills theo nhu cầu.</p></article>
+    </div></section>
+    <section class="how-section" id="how-it-works"><div><p class="eyebrow">KIẾN TRÚC ĐỊNH HƯỚNG</p><h2>Từ website đến AI Agent</h2><p>Trong phiên bản triển khai thực tế, backend sẽ tiếp nhận tin nhắn và giao tiếp với OpenClaw Gateway theo cấu hình an toàn.</p></div><div class="flow"><div>Khách hàng<small>Gửi câu hỏi</small></div><b>→</b><div>Website HTML<small>Giao diện chat</small></div><b>→</b><div>Backend API<small>Xử lý yêu cầu</small></div><b>→</b><div class="flow-highlight">OpenClaw<small>Agent + Skills</small></div></div></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">✦</span> ClawCare</a><p>Prototype học tập về tự động hóa chăm sóc khách hàng.</p><small>OpenClaw AI Customer Service · Demo UI</small></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
